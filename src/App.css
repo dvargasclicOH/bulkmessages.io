@@ -1,38 +1,74 @@
-.App {
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F0F4F8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
   text-align: center;
+  margin-bottom: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"],
+input[type="file"] {
+  width: 60%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #F8F9FA;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+  outline: none;
+  border-color: #A0E7E5;
+}
+
+button {
+  background: linear-gradient(135deg, #A0E7E5, #B4F8C8);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #B4F8C8, #A0E7E5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 16px;
+  color: #2D3142;
 }
